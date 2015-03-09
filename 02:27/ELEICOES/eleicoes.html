@@ -1,0 +1,697 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml"><head>
+
+<title>SPOJ.com - Problem ELEICOES</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" id="metatag">
+<meta name="Keywords" content="programming, language, algorithm, spoj, contest, contester, Java, C#, Pascal, C, C++, python, ruby, caml, ocaml, perl, haskell, lisp, prolog, fortran, assembler, asembler, functional, online, judge, problem, problemset, ACM">
+
+<link href="http://br.spoj.com/gfx/favicon.png" rel="shortcut icon" type="image/x-icon">
+<link href="http://br.spoj.com/rss/" rel="alternate" type="application/rss+xml" title="RSS Feed">
+<link href="eleicoes_arquivos/common.css" rel="stylesheet" type="text/css" id="theme">
+<link href="eleicoes_arquivos/style.css" rel="stylesheet" type="text/css" id="theme">
+<link href="eleicoes_arquivos/tooltips.css" rel="stylesheet" type="text/css" id="theme">
+<script src="eleicoes_arquivos/ga.js" async="" type="text/javascript"></script><script src="eleicoes_arquivos/all.js" id="facebook-jssdk"></script><script src="eleicoes_arquivos/plusone.js" async="" type="text/javascript"></script><script type="text/javascript" src="eleicoes_arquivos/jquery_005.js"></script><style id="ublock-preload-1ae7a5f130fc79b4fdb8a4272d9426b5">.adsbygoogle
+{display:none !important;}</style>
+<script type="text/javascript" src="eleicoes_arquivos/jquery_002.js"></script>
+<script type="text/javascript" src="eleicoes_arquivos/jquery_004.js"></script> 
+<!--
+<meta property="og:description" content="SPOJ (Sphere Online Judge) is an online judge system with over 100,000 registered users and over 10000 problems. The solution to problems can be submitted in over 40 languages including C, C++, Java, Python, C#, Go, Haskell, Ocaml, and F#. SPOJ has a rapidly growing problem set/tasks available for practice 24 hours/day, including many original tasks prepared by the community of expert problem setters associated with the project."/>
+<meta name="description" content="SPOJ (Sphere Online Judge) is an online judge system with over 100,000 registered users and over 10000 problems. The solution to problems can be submitted in over 40 languages including C, C++, Java, Python, C#, Go, Haskell, Ocaml, and F#. SPOJ has a rapidly growing problem set/tasks available for practice 24 hours/day, including many original tasks prepared by the community of expert problem setters associated with the project."/>
+-->
+<style type="text/css">
+<!--
+.maintable {width: 1055;} 
+-->
+</style>
+<script type="text/javascript" language="javascript">
+<!--
+function UnCryptMailto(s) {
+	var n=0;
+	var r="";
+	for(var i=0;i<s.length;i++) {		
+		n=s.charCodeAt(i); 
+		if (n>=8364) {n = 128;}
+		r += String.fromCharCode(n+(2));	
+	}
+	return r;
+}
+function linkTo_UnCryptMailto(s)	{
+	location.href=UnCryptMailto(s);
+}
+// -->
+</script>
+
+<script type="text/javascript">
+function recordOutboundLink(link, category, action) {
+  try {
+    var pageTracker=_gat._getTracker("UA-XXXXX-X");
+    pageTracker._trackEvent(category, action);
+    setTimeout('document.location = "' + link.href + '"', 100)
+  }catch(err){}
+}
+</script>
+
+    <script type="text/javascript" src="eleicoes_arquivos/shCore.js"></script>
+	<script type="text/javascript" src="eleicoes_arquivos/shBrushCpp.js"></script>
+	<script type="text/javascript" src="eleicoes_arquivos/shBrushCSharp.js"></script>
+    <script type="text/javascript" src="eleicoes_arquivos/shBrushJava.js"></script>
+    <script type="text/javascript" src="eleicoes_arquivos/shBrushPhp.js"></script>
+    <script type="text/javascript" src="eleicoes_arquivos/shBrushPython.js"></script>
+	<link type="text/css" rel="stylesheet" href="eleicoes_arquivos/shCore.css">
+	<link type="text/css" rel="stylesheet" href="eleicoes_arquivos/shThemeDefault.css">
+	
+	<script type="text/javascript">
+		SyntaxHighlighter.all();
+	</script>
+	
+
+		<meta property="og:title" content="SPOJ.com - Problem ELEICOES">
+    	<meta property="fb:app_id" content="321676846207">
+	<meta property="og:type" content="spoj-pl:problem">
+	<meta property="og:url" content="http://www.spoj.com/problems/ELEICOES/">
+	<meta property="og:image" content="http://www.spoj.com/gfx/logo-cr.png">
+	<meta property="og:description" content="O prefeito de Piraporinha do Sul foi afastado de seu cargo, devido a
+acusações de corrupção em contratos da prefeitura,
+e por isso foram convocadas novas eleições para prefeito.
+Procurando uma renovação política, a comissão
+eleitoral permitiu que mesmo candidatos de fora...">
+<meta name="description" content="O prefeito de Piraporinha do Sul foi afastado de seu cargo, devido a
+acusações de corrupção em contratos da prefeitura,
+e por isso foram convocadas novas eleições para prefeito.
+Procurando uma renovação política, a comissão
+eleitoral permitiu que mesmo candidatos de fora...">
+		<meta property="og:site_name" content="spoj.com">
+
+<link href="eleicoes_arquivos/rcw4.css" type="text/css" rel="stylesheet"><style>@-webkit-keyframes popnxupcfomunnjxdmxxgvybvojawloyrfhhbcbkc {50% {-webkit-transform:scale(1.2);}100% {-webkit-transform:scale(1);}}@keyframes popnxupcfomunnjxdmxxgvybvojawloyrfhhbcbkc {50% {-webkit-transform:scale(1.2);transform:scale(1.2);}100% {-webkit-transform:scale(1);transform:scale(1);}}#nxupcfomunnjxdmxxgvybvojawloyrfhhbcbkc{padding:0;margin:0;font:13px Arial,Helvetica;text-transform:none;font-size: 100%;vertical-align:baseline;line-height:normal;color:#fff;position:static;border:solid 2px #fff !important;color:#fff !important;display:block !important;height:auto !important;margin:0 !important;opacity:0.9 !important;padding:7px 10px !important;position:fixed !important;visibility:visible !important;width:auto !important;z-index:2147483647 !important;-moz-border-radius:5px !important;border-radius:5px !important;-moz-box-shadow:0px 0px 20px #000 !important;box-shadow:0px 0px 20px #000 !important;}.nxupcfomunnjxdmxxgvybvojawloyrfhhbcbkc-blocked{padding:0;margin:0;font:13px Arial,Helvetica;text-transform:none;font-size: 100%;vertical-align:baseline;line-height:normal;color:#fff;position:static;color:#AAA !important;display:inline !important;text-decoration:line-through !important;}#nxupcfomunnjxdmxxgvybvojawloyrfhhbcbkc br{display:block !important;padding:0;margin:0;font:13px Arial,Helvetica;text-transform:none;font-size: 100%;vertical-align:baseline;line-height:normal;color:#fff;position:static;}#nxupcfomunnjxdmxxgvybvojawloyrfhhbcbkc span{background:transparent !important;padding:0;margin:0;font:13px Arial,Helvetica;text-transform:none;font-size: 100%;vertical-align:baseline;line-height:normal;color:#fff;position:static;}#nxupcfomunnjxdmxxgvybvojawloyrfhhbcbkc div{padding:0;margin:0;font:13px Arial,Helvetica;text-transform:none;font-size: 100%;vertical-align:baseline;line-height:normal;color:#fff;position:static;border:0 !important;margin:0 !important;padding:0 !important;width:auto !important;letter-spacing:normal !important;font:13px Arial,Helvetica !important;text-align:left !important;text-shadow:none !important;text-transform:none !important;word-spacing:normal !important;}#nxupcfomunnjxdmxxgvybvojawloyrfhhbcbkc a{padding:0;margin:0;font:13px Arial,Helvetica;text-transform:none;font-size: 100%;vertical-align:baseline;line-height:normal;color:#fff;position:static;font-weight:normal !important;background:none !important;text-decoration:underline !important;color:#fff !important;}a#nxupcfomunnjxdmxxgvybvojawloyrfhhbcbkc-gear{padding:0;margin:0;font:13px Arial,Helvetica;text-transform:none;font-size: 100%;vertical-align:baseline;line-height:normal;color:#fff;position:static;text-decoration:none !important;position:absolute !important;display:none !important;font-size:20px !important;width:20px !important;height:20px !important;line-height:20px !important;text-align:center !important;background-color:rgba(255,255,255,.8) !important;background-image:url(resource://firefox-at-ghostery-dot-com/ghostery/data/images/gear.svg) !important;background-size:16px 16px !important;background-position:center center !important;background-repeat:no-repeat !important;text-decoration:none !important;}a#nxupcfomunnjxdmxxgvybvojawloyrfhhbcbkc-gear:hover{-webkit-animation-name:popnxupcfomunnjxdmxxgvybvojawloyrfhhbcbkc !important;animation-name:popnxupcfomunnjxdmxxgvybvojawloyrfhhbcbkc !important;-webkit-animation-duration:0.3s !important;animation-duration:0.3s !important;}#nxupcfomunnjxdmxxgvybvojawloyrfhhbcbkc:hover #nxupcfomunnjxdmxxgvybvojawloyrfhhbcbkc-gear{text-decoration:none !important;display:inline-block !important;}#nxupcfomunnjxdmxxgvybvojawloyrfhhbcbkc hr{visibility:hidden !important;padding:0;margin:0;font:13px Arial,Helvetica;text-transform:none;font-size: 100%;vertical-align:baseline;line-height:normal;color:#fff;position:static;height:1em;}@media print{#nxupcfomunnjxdmxxgvybvojawloyrfhhbcbkc{display:none !important;}}</style><script>try {  for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){    var lastpass_f = document.forms[lastpass_iter];    if(typeof(lastpass_f.lpsubmitorig)=="undefined"){      if (typeof(lastpass_f.submit) == "function") {        lastpass_f.lpsubmitorig = lastpass_f.submit;        lastpass_f.submit = function(){          var form = this;          try {            if (document.documentElement && 'createEvent' in document)            {              var forms = document.getElementsByTagName('form');              for (var i=0 ; i<forms.length ; ++i)                if (forms[i]==form)                {                  var element = document.createElement('lpformsubmitdataelement');                  element.setAttribute('formnum',i);                  element.setAttribute('from','submithook');                  document.documentElement.appendChild(element);                  var evt = document.createEvent('Events');                  evt.initEvent('lpformsubmit',true,false);                  element.dispatchEvent(evt);                  break;                }            }          } catch (e) {}          try {            form.lpsubmitorig();          } catch (e) {}        }      }    }  }} catch (e) {}</script></head>
+<body>
+<center>
+
+
+
+<table class="maintable" id="maintable" cellpadding="10" cellspacing="0">
+<tbody><tr>
+    <td colspan="2" class="header">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody><tr>
+		<td class="headerleft">
+		</td><td class="headercenter">
+<h1>SPOJ Brasil</h1>
+		</td>
+		<td class="headerright">
+	</td></tr>
+	</tbody></table>
+    </td>
+</tr>
+<tr><td class="menu" valign="top" width="92">
+
+	
+
+<div class="section">
+	
+<form name="login" action="https://br.spoj.com/problems/ELEICOES/" method="post" onsubmit="if(0&amp;&amp;document.login.ssl.checked) document.login.action='https://br.spoj.com/problems/ELEICOES/'" style="margin-bottom: 18px"> 
+Usuário: <input name="login_user" style="width: 85px; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QsPDhss3LcOZQAAAU5JREFUOMvdkzFLA0EQhd/bO7iIYmklaCUopLAQA6KNaawt9BeIgnUwLHPJRchfEBR7CyGWgiDY2SlIQBT/gDaCoGDudiy8SLwkBiwz1c7y+GZ25i0wnFEqlSZFZKGdi8iiiOR7aU32QkR2c7ncPcljAARAkgckb8IwrGf1fg/oJ8lRAHkR2VDVmOQ8AKjqY1bMHgCGYXhFchnAg6omJGcBXEZRtNoXYK2dMsaMt1qtD9/3p40x5yS9tHICYF1Vn0mOxXH8Uq/Xb389wff9PQDbQRB0t/QNOiPZ1h4B2MoO0fxnYz8dOOcOVbWhqq8kJzzPa3RAXZIkawCenHMjJN/+GiIqlcoFgKKq3pEMAMwAuCa5VK1W3SAfbAIopum+cy5KzwXn3M5AI6XVYlVt1mq1U8/zTlS1CeC9j2+6o1wuz1lrVzpWXLDWTg3pz/0CQnd2Jos49xUAAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-position: right center;" class="form" type="text"><br>
+Senha: <input name="password" style="width: 85px; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QsPDhss3LcOZQAAAU5JREFUOMvdkzFLA0EQhd/bO7iIYmklaCUopLAQA6KNaawt9BeIgnUwLHPJRchfEBR7CyGWgiDY2SlIQBT/gDaCoGDudiy8SLwkBiwz1c7y+GZ25i0wnFEqlSZFZKGdi8iiiOR7aU32QkR2c7ncPcljAARAkgckb8IwrGf1fg/oJ8lRAHkR2VDVmOQ8AKjqY1bMHgCGYXhFchnAg6omJGcBXEZRtNoXYK2dMsaMt1qtD9/3p40x5yS9tHICYF1Vn0mOxXH8Uq/Xb389wff9PQDbQRB0t/QNOiPZ1h4B2MoO0fxnYz8dOOcOVbWhqq8kJzzPa3RAXZIkawCenHMjJN/+GiIqlcoFgKKq3pEMAMwAuCa5VK1W3SAfbAIopum+cy5KzwXn3M5AI6XVYlVt1mq1U8/zTlS1CeC9j2+6o1wuz1lrVzpWXLDWTg3pz/0CQnd2Jos49xUAAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-position: right center;" class="form" type="password"><br>
+<div style="font-size: 10px; ">
+<script language="javascript" type="text/javascript">
+<!--
+    //document.write('<input type="checkbox" name="ssl" id="ssl" /><label for="ssl">secure</label><br/>');
+//-->
+</script>
+<div title="Keep me signed in for today">
+<input name="autologin" value="1" id="autologin" type="checkbox"><label for="autologin">for today</label>
+</div>
+<!--Keep me signed in for today-->
+</div>
+<input name="submit" value="Log In" class="button" style="width: 85px; margin-bottom: 10px;" type="submit">
+
+</form>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	if( $.cookie('ssl') == '1' ){
+		$("#ssl").attr('checked', true);
+	}
+	$("#ssl").change(function(){
+		if($(this).is(':checked')){
+			$.cookie('ssl', '1');
+		} else {
+			$.cookie('ssl', '0');
+		}
+	});
+});
+</script>
+
+</div>
+<div class="menucmd"><a href="http://br.spoj.com/register">register</a><br><br><a href="http://br.spoj.com/status">status</a><br><a href="http://br.spoj.com/submit">submeter</a><br><a href="http://br.spoj.com/problems/seletivas/">problemas</a><br><a href="http://br.spoj.com/search">search</a><br><br><a href="http://br.spoj.com/ranks">classificaç&#259;o</a><br><br><a href="http://br.spoj.com/news">notícias</a><br><a href="http://br.spoj.com/embed/info/">informaç&#337;es</a><br><a href="http://br.spoj.com/embed/rules/">regras</a><br><a href="http://br.spoj.com/embed/links/">links</a><br><hr></div><a href="http://br.spoj.com/problems/seletivas/"></a><br>
+
+
+	
+<div class="time">
+<a href="https://www.spoj.com/">SPOJ</a></div><a href="https://www.spoj.com/">
+<div class="time">
+2015-03-01
+<br>
+<b>19 : 51 : 14</b>
+</div>
+
+</a></td><td style="width: 748px; padding:0px;" class="content0" valign="top">
+        <table cellpadding="0" cellspacing="0" width="100%">
+        <tbody><tr>
+                <td style="padding:0px;" colspan="2"><center>
+                                
+                </center></td>
+        </tr>
+        <tr>
+                <td class="content" style="padding: 10px" width="99%">
+
+<script type="text/javascript" src="eleicoes_arquivos/jquery_003.js"></script>
+<script type="text/javascript" src="eleicoes_arquivos/jquery_006.js"></script>
+<script type="text/javascript" src="eleicoes_arquivos/jquery.js"></script>
+
+
+
+	<!-- tylko jesli problem jest niewidoczny -->
+	<div class="cxitem" id="h_problem_hidden">
+	<div class="cxtitle">Problem hidden</div>
+	<div>
+		This problem was hidden by Editorial Board member probably because it has incorrect language
+	version or invalid test data, or description of the problem is not clear.
+		</div>
+	</div>
+ <!-- wykorzystywane w pcontent.html (by wiele) -->
+
+<table class="problems" width="100%">
+<tbody><tr class="navigation">
+<td><a href="http://br.spoj.com/submit/ELEICOES/">Submeter</a></td>
+<td><a href="http://br.spoj.com/status/ELEICOES/">Todas submiss&#337;es</a></td>
+<td><a href="http://br.spoj.com/ranks/ELEICOES/">Melhores</a></td>
+<td><a href="http://br.spoj.com/problems/ELEICOES.ps">PS</a></td>
+<td><a href="http://br.spoj.com/problems/ELEICOES.pdf">PDF</a></td>
+<td><a href="http://br.spoj.com/problems/seletivas/">Voltar</a></td>
+</tr>
+</tbody></table>
+
+<div class="prob" style="position: relative">
+
+<!-- google_ad_section_start -->
+
+<!-- plik z pomoca kontekstowa (cxhelp_*) dziedziczony po pindex.html -->
+
+<div style="position: absolute;">
+<div style="display: block;" class="fb-like" data-href="http://www.spoj.com/problems/ELEICOES/" data-send="true" data-layout="box_count" data-width="70" data-show-faces="false"><iframe style="width: 30px; height: 19px; border: 0px none;" id="gqqdvjwjkjigzugkvoggmviprimzeykwccdfjgj"></iframe></div>
+</div>
+<div style="position: absolute; right: 0px">
+<!-- Place this tag where you want the +1 button to render -->
+<g:plusone style="display: block;" size="tall"><iframe style="width: 30px; height: 19px; border: 0px none;" id="kabdqcsioozheltxsyutvxxikldmfbbbky"></iframe></g:plusone>
+<!-- Place this render call where appropriate -->
+
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+</div>
+
+<script type="text/javascript" src="eleicoes_arquivos/ASCIIMathMLwFallback.js"></script>
+<!--script type="text/javascript" src="/gfx/jscripts/tiny_mce/plugins/asciisvg/js/ASCIIsvgPI.js"></script-->
+<script type="text/javascript">
+<!--
+var AScgiloc = 'http://www.imathas.com/imathas/filter/graph/svgimg.php';
+var AMTcgiloc = "/files/gif/";
+-->
+</script>
+
+<meta property="og:type" content="spoj-pl:problem"> 
+<table style="margin-top:10px" width="100%">
+<tbody><tr>
+	<td>
+		<h2>SPOJ Problem Set (obi)</h2>
+				<h1>3773. Eleições</h1>
+		<h2>Problema: ELEICOES</h2>
+	</td>
+	</tr>
+</tbody></table>
+
+
+<ins class="adsbygoogle" style="display: none ! important; width: 728px; height: 90px;" data-ad-client="ca-pub-4453360425583535" data-ad-slot="1073332635"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<p align="justify">
+</p><p>O prefeito de Piraporinha do Sul foi afastado de seu cargo, devido a
+acusações de corrupção em contratos da prefeitura,
+e por isso foram convocadas novas eleições para prefeito.
+Procurando uma renovação política, a comissão
+eleitoral permitiu que mesmo candidatos de fora da cidade concorressem ao
+cargo de prefeito.</p>
+
+<p>Devido a essa nova regra, houve uma quantidade muito grande de candidatos
+à prefeitura. O software da comissão eleitoral de Piraporinha do
+Sul não estava preparado para isso, e por isso você foi contratado
+para escrever um programa que, dados os votos lançados pelos habitantes
+da cidade, decide qual candidato ganhou.</p>
+
+
+<h3>Entrada</h3>
+
+<p>A entrada é composta de um único caso de teste. A primeira
+linha contém um inteiro <code>N</code> representando o número de
+votos. Nas próximas <code>N</code> linhas, haverá um inteiro
+<code>X<sub>i</sub></code>, que representa o <code>i</code>-ésimo voto
+(os candidatos são identificados por inteiros).</p>
+
+<h3>Saída</h3>
+
+<p>Para cada conjunto de teste da entrada seu programa deve produzir uma
+única linha, contendo o número do candidato que venceu (aquele
+que obteve mais votos). Você pode supor que existe apenas um vencedor.</p>
+
+<h3>Restrições</h3>
+
+<ul>
+  <li><code>1 &#8804; N &#8804; 100000</code></li>
+  <li><code>1 &lt; X<sub>i</sub> &#8804; 1000000000</code></li>
+</ul>
+
+<h3>Exemplo</h3>
+<pre><b>Entrada</b>
+
+5
+1000
+1000
+2588
+4000
+2587
+
+<b>Saída</b>
+
+1000
+
+<b>Entrada</b>
+
+4
+4000
+3500
+4000
+4000
+
+<b>Saída</b>
+
+4000
+
+</pre>
+
+
+
+
+
+<hr>
+<table style="margin-bottom:10px" class="probleminfo" align="left" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr><td>Adicionado por:</td><td><a href="http://br.spoj.com/users/wanderley">Wanderley Guimarães</a></td></tr>
+<tr><td>Data:</td><td>2009-01-26</td></tr>
+<tr><td>Tempo limite:</td><td>0.213s
+</td></tr>
+<tr><td>Tamanho do fonte:</td><td>50000B</td></tr>
+<tr><td>Memory limit:</td><td>1536MB</td></tr>
+	<tr>
+		<td>Cluster:</td>
+		<td>
+							<a href="http://br.spoj.com/clusters/" target="_blank">Cube (Intel Pentium G860 3GHz)</a>
+					
+		</td>
+	</tr>
+<tr><td>Linguagem permitida:</td><td>Todas exceto: CLOJ ERL F# JS PERL 6 PYTH 3.2.3 n SCALA SCM chicken TCL </td></tr>
+<tr><td>Origem:</td><td>Treino para OBI de 2006 - Fábio Moreira &amp; Daniel Fleischman</td></tr>	
+</tbody></table><!-- google_ad_section_end -->
+
+<div id="ccontent">
+<!-- google_ad_section_start -->
+
+
+<hr style="clear:both;">
+<a href="#" onclick="toggleComments(); return false;"><span id="comments_sh">hide</span> comments</a><br>
+
+<a id="comments"></a>
+<table id="comments_table" width="100%">
+		<tbody><tr>
+		<td colspan="2">
+		
+<table class="navigation" width="99%">
+<tbody><tr><td align="left" width="27%">
+<i>Anterior</i></td><td class="navigationcenter" width="16%">&nbsp;1</td> 
+<td class="navigationcenter" width="16%"><a href="http://br.spoj.com/problems/ELEICOES/cstart=10" class="pager_link">&nbsp;2</a></td> 
+<td class="navigationcenter" width="16%"><a href="http://br.spoj.com/problems/ELEICOES/cstart=20" class="pager_link">&nbsp;3</a></td> 
+<td align="right" width="25%">
+<a href="http://br.spoj.com/problems/ELEICOES/cstart=10" class="pager_link">Próximo</a> <a href="http://br.spoj.com/problems/ELEICOES/cstart=20" class="pager_link">&gt;</a></td></tr></tbody></table>		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+				</td>
+	</tr>
+	
+	<script language="JavaScript">
+	<!--
+	$(document).ready(function(){
+        $('.pager_link').bind('click', function(me){
+                var href=$(me.currentTarget).attr('href');
+		$('#ccontent').animate({opacity: 0.5},1);
+                $.ajax({
+                        type: "GET",
+                        url: href+",ajax=1",
+                        contentType: "application/x-www-form-urlencoded;charset=ISO-8859-2",
+                        success: function(data){
+                                $('#ccontent').html(data);
+				$('#ccontent').animate({opacity: 1.0},1);
+                        },
+                        error: function(err){
+                                alert('error');
+                        }
+                });
+                return false;
+        });
+	});
+	-->
+	</script>
+	
+
+			
+	<tr>
+		<td colspan="2" class="comm comm_odd ">
+		<font>
+		2015-02-26 23:43:37 <b><a href="http://br.spoj.com/users/gustavobeck">Gustavo Beckhauser </a></b> 
+		</font>
+								<br>
+				velho tempo limite excedido ja tentei de tudo e nao vai 
+						</td>
+	</tr>
+				
+	<tr>
+		<td colspan="2" class="comm comm_even ">
+		<font>
+		2015-01-16 13:49:16 <b><a href="http://br.spoj.com/users/psykesoad">Diego Jordão Tenório Maranhão</a></b> 
+		</font>
+								<br>
+				Que bom que conseguiu, porque o meu tá dando TLE! KKKKKKKKKKKKKKKKKKKKKKKKKK
+						</td>
+	</tr>
+				
+	<tr>
+		<td colspan="2" class="comm comm_odd ">
+		<font>
+		2015-01-15 17:24:09 <b><a href="http://br.spoj.com/users/kessia">thais</a></b> 
+		</font>
+								<br>
+				Tenho nem palavras pra agradecer, valeu mesmo mesmo mesmo Diego!
+<br>Recebi AC nela :D
+				<br><br>
+		<b>Last edit: 2015-01-15 17:24:46</b>
+						</td>
+	</tr>
+				
+	<tr>
+		<td colspan="2" class="comm comm_even ">
+		<font>
+		2015-01-13 14:21:57 <b><a href="http://br.spoj.com/users/psykesoad">Diego Jordão Tenório Maranhão</a></b> 
+		</font>
+								<br>
+				Outra coisa que o problema não deixa explícito mas eu descobri aqui,
+ é que deve existir o loop que, se o N for menor que 1, a execução 
+acaba.
+				<br><br>
+		<b>Last edit: 2015-01-13 14:25:40</b>
+						</td>
+	</tr>
+				
+	<tr>
+		<td colspan="2" class="comm comm_odd ">
+		<font>
+		2015-01-13 14:01:19 <b><a href="http://br.spoj.com/users/psykesoad">Diego Jordão Tenório Maranhão</a></b> 
+		</font>
+								<br>
+				Thais, primeiro vem o número total de votos, o N. Depois virão N 
+linhas com os números dos candidatos que foram votados. Vamos usar a 
+primeira entrada. Foram 5 votos. O primeiro voto foi no candidato de 
+número 1000, o segundo também foi no candidato de número 1000, o 
+terceiro foi no de número 2588, o quarto no de número 4000 e o quinto no
+ de número 2587. O vencedor das eleições, com 2 votos, foi o candidato 
+de número 1000. Sacou? O SPOJ quer que você diga no final qual o número 
+do candidato mais votado, só isso. Se tiver mais alguma dúvida pode 
+perguntar.
+				<br><br>
+		<b>Last edit: 2015-01-13 14:02:33</b>
+						</td>
+	</tr>
+				
+	<tr>
+		<td colspan="2" class="comm comm_even ">
+		<font>
+		2015-01-07 06:56:32 <b><a href="http://br.spoj.com/users/kessia">thais</a></b> 
+		</font>
+								<br>
+				Alguém poderia, por favor, me explicar melhor essa questao? ainda não entendi o enunciado dela :/
+						</td>
+	</tr>
+				
+	<tr>
+		<td colspan="2" class="comm comm_odd ">
+		<font>
+		2014-09-13 22:39:45 <b><a href="http://br.spoj.com/users/jvalecio">José Vitor Alécio Rodrigues</a></b> 
+		</font>
+								<br>
+				Quando executo o programa no codeblocks sempre da resposta certa e 
+quando tento submeter a resposta sai errada, não tou usando lixo 
+eletronico, acho que o problema e no tamanha do vetor...
+<br>O que faco?
+						</td>
+	</tr>
+				
+	<tr>
+		<td colspan="2" class="comm comm_even ">
+		<font>
+		2013-11-03 04:27:38 <b><a href="http://br.spoj.com/users/tamiusjt">Tamires Gomes</a></b> 
+		</font>
+								<br>
+				Olá alguém tem esse programa feito que possa me passar, sou 
+estudante de engenharia civil e preciso entregar esse programa, estou 
+fazendo mais não esta rodando uso o codeblcks em C quero ver oque estou 
+fazendo de errado. por favor
+<br>eng.tamiresgomes@gmail.com
+						</td>
+	</tr>
+				
+	<tr>
+		<td colspan="2" class="comm comm_odd ">
+		<font>
+		2013-10-28 02:54:18 <b><a href="http://br.spoj.com/users/kano_kun666">Chinês da Cadeira</a></b> 
+		</font>
+								<br>
+				Pq vcs naum vao trabalhar ao inves de ficar na frente do pc? Cambada de vagabundos
+						</td>
+	</tr>
+				
+	<tr>
+		<td colspan="2" class="comm comm_even ">
+		<font>
+		2013-06-30 23:47:10 <b><a href="http://br.spoj.com/users/fsbasilio">Franklin Basilio UEPB</a></b> 
+		</font>
+								<br>
+				ola pessoal, estou utilizando Ansi c, e a resposta no Eclipse está 
+dando certo. Mas no do Spoj diz que tá dando resposta errada. Só se for o
+ caso de haver dois candidatos empatados em quantidade de votos qual a 
+decisão para desempatar? no meu o primeiro que tiver maior quantidade de
+ votos vence.
+						</td>
+	</tr>
+			
+</tbody></table>
+
+
+<script language="javascript" type="text/javascript">
+<!--
+function getCookieVal (offset) {
+        var endstr = document.cookie.indexOf (";", offset);
+        if (endstr == -1) { 
+                endstr = document.cookie.length; 
+        }
+        return unescape(document.cookie.substring(offset, endstr));
+}
+
+function GetCookie (name) {
+  var arg = name + "=";
+  var alen = arg.length;
+  var clen = document.cookie.length;
+  var i = 0;
+  while (i < clen) {
+    var j = i + alen;
+    if (document.cookie.substring(i, j) == arg) {
+      return getCookieVal (j);
+      }
+    i = document.cookie.indexOf(" ", i) + 1;
+    if (i == 0) break; 
+    }
+  return null;
+}
+
+function toggleComments() {
+        var a = document.getElementById('comments_table');
+        var d = a.style.display;
+        if( d == "" || d == "block" ){
+                d = "none";
+                document.getElementById('comments_sh').innerHTML = 'show';
+        } else {
+                d = "block";
+                document.getElementById('comments_sh').innerHTML = 'hide';
+        }
+        a.style.display = d;
+        document.cookie="comments_table="+d+"; path=/;";
+}
+
+if( GetCookie('comments_table') == 'none' ){
+        document.getElementById('comments_sh').innerHTML = 'show';
+        document.getElementById('comments_table').style.display = 'hide';
+}
+
+-->
+</script>
+
+
+<!-- google_ad_section_end -->
+</div>
+
+<table width="100%">
+        </table>
+
+</div>        </td>
+</tr><tr>
+        <td style="padding:0px" colspan="2"><center>
+                
+</center></td>
+</tr>
+</tbody></table>
+</td>
+
+
+<td class="fun" width="200"><div>
+
+<script async="" src="eleicoes_arquivos/adsbygoogle.js"></script>
+<!-- spoj_all_300x600_right -->
+<ins class="adsbygoogle" style="display: none ! important; width: 300px; height: 600px;" data-ad-client="ca-pub-4453360425583535" data-ad-slot="7259467035"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<div>
+<style>
+.fun{
+        vertical-align: top;
+}
+.fun > div.fixed{
+        top: 10px;
+        position: fixed;
+}
+</style>
+<script type="text/javascript">
+$(function(){
+	if ($('.fun>div').height() == 0){
+		_gaq.push(['_trackEvent', 'ads', 'adblock']);
+		$(".freelancer_728").show();
+	}
+});
+</script>
+</div></div></td>
+
+
+</tr>
+
+<tr>
+<td colspan="2" class="footer">
+<div class="a-footer"></div>
+<script language="javascript" type="text/javascript">
+<!--
+function swapSheet(sheet, caller) {
+    document.getElementById('theme').href=sheet;
+    document.cookie="css_219="+sheet+"; path=/;";
+    caller.href="#bottom";
+}
+
+function setWidth(w, caller) {
+    document.getElementById('maintable').style.width=w;
+    document.cookie="res="+w+"; path=/;";
+    caller.href="#bottom";
+}
+
+
+
+//-->
+
+</script>
+            <table width="100%">
+    <tbody><tr>
+	<td align="center">
+            Visualização:
+	    <a href="http://br.spoj.com/?rsl=755px" onclick="setWidth('755px', this)">800x600</a>
+	    <a href="http://br.spoj.com/?rsl=980px" onclick="setWidth('980px', this)">1024x768</a>
+	    <a href="http://br.spoj.com/?rsl=100%" onclick="setWidth('100%', this)">Tela cheia</a>
+	    &nbsp;&nbsp;
+	    Tema:
+	    <a href="http://br.spoj.com/?css=/content/skin1.css" onclick="swapSheet('/content/skin1.css', this)">olive</a>
+	    <a href="http://br.spoj.com/?css=/themes/skin2.css" onclick="swapSheet('/themes/skin2.css', this)">banana</a>
+	    <a href="http://br.spoj.com/?css=/content/skin3.css" onclick="swapSheet('/content/skin3.css', this)">plum</a>
+	</td>
+    </tr>
+    </tbody></table>
+
+<script src="eleicoes_arquivos/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-4289127-1";
+urchinTracker();
+</script></td></tr></tbody></table>
+</center>
+<div class="a-header"></div>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pl_PL/all.js#xfbml=1&appId=321676846207";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!--<div id="fb-root"></div>
+<script src="//connect.facebook.net/en_US/all.js#xfbml=1"></script>-->
+
+
+<div style="font-size:10px; margin-top:4px; color: rgb(85,80,95); text-align: center">
+	© Spoj.com. All Rights Reserved. Spoj uses <a href="http://sphere-engine.com/" style="color:black">Sphere Engine</a>™ © by <a href="http://sphere-research.com/" style="color:black">Sphere Research Labs</a>.
+</div>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-10507872-1']);
+    _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                      })();
+                      </script>
+                      
+
+
+<script type="text/javascript">
+(function() {
+	var wrc = document.createElement('script'); wrc.type = 'text/javascript'; wrc.async = true; window.rc_utm_source='spoj';
+	wrc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'recruitcoders.com/w4loader.js';
+	var s = document.getElementsByTagName('body')[0]; s.appendChild(wrc);
+})();
+</script><script src="eleicoes_arquivos/w4loader.js" async="" type="text/javascript"></script>
+
+
+<div id="rcv4_widget"><a href="" id="rcv4_handle_a"><div id="rcv4_handle"><span>Time for a new job?</span></div></a><div id="rcv4_content"></div><div id="rcv4_footer">Powered by <a href="http://recruitcoders.com/" target="_blank">Recruit Coders</a>™</div></div><style class="ublock-postload-1ae7a5f130fc79b4fdb8a4272d9426b5">.adsbygoogle
+{display:none !important;}</style><div id="hidden" style="visibility: hidden;"></div></body></html>

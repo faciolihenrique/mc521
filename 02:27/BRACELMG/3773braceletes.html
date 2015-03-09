@@ -1,0 +1,576 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml"><head>
+
+<title>SPOJ.com - Problem BRACELMG</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" id="metatag">
+<meta name="Keywords" content="programming, language, algorithm, spoj, contest, contester, Java, C#, Pascal, C, C++, python, ruby, caml, ocaml, perl, haskell, lisp, prolog, fortran, assembler, asembler, functional, online, judge, problem, problemset, ACM">
+
+<link href="http://br.spoj.com/gfx/favicon.png" rel="shortcut icon" type="image/x-icon">
+<link href="http://br.spoj.com/rss/" rel="alternate" type="application/rss+xml" title="RSS Feed">
+<link href="braceletes_arquivos/common.css" rel="stylesheet" type="text/css" id="theme">
+<link href="braceletes_arquivos/style.css" rel="stylesheet" type="text/css" id="theme">
+<link href="braceletes_arquivos/tooltips.css" rel="stylesheet" type="text/css" id="theme">
+<script src="braceletes_arquivos/ga.js" async="" type="text/javascript"></script><script src="braceletes_arquivos/all.js" id="facebook-jssdk"></script><script src="braceletes_arquivos/plusone.js" async="" type="text/javascript"></script><script type="text/javascript" src="braceletes_arquivos/jquery_005.js"></script>
+<script type="text/javascript" src="braceletes_arquivos/jquery_002.js"></script>
+<script type="text/javascript" src="braceletes_arquivos/jquery_004.js"></script> 
+<!--
+<meta property="og:description" content="SPOJ (Sphere Online Judge) is an online judge system with over 100,000 registered users and over 10000 problems. The solution to problems can be submitted in over 40 languages including C, C++, Java, Python, C#, Go, Haskell, Ocaml, and F#. SPOJ has a rapidly growing problem set/tasks available for practice 24 hours/day, including many original tasks prepared by the community of expert problem setters associated with the project."/>
+<meta name="description" content="SPOJ (Sphere Online Judge) is an online judge system with over 100,000 registered users and over 10000 problems. The solution to problems can be submitted in over 40 languages including C, C++, Java, Python, C#, Go, Haskell, Ocaml, and F#. SPOJ has a rapidly growing problem set/tasks available for practice 24 hours/day, including many original tasks prepared by the community of expert problem setters associated with the project."/>
+-->
+<style type="text/css">
+<!--
+.maintable {width: 1055;} 
+-->
+</style>
+<script type="text/javascript" language="javascript">
+<!--
+function UnCryptMailto(s) {
+	var n=0;
+	var r="";
+	for(var i=0;i<s.length;i++) {		
+		n=s.charCodeAt(i); 
+		if (n>=8364) {n = 128;}
+		r += String.fromCharCode(n+(2));	
+	}
+	return r;
+}
+function linkTo_UnCryptMailto(s)	{
+	location.href=UnCryptMailto(s);
+}
+// -->
+</script>
+
+<script type="text/javascript">
+function recordOutboundLink(link, category, action) {
+  try {
+    var pageTracker=_gat._getTracker("UA-XXXXX-X");
+    pageTracker._trackEvent(category, action);
+    setTimeout('document.location = "' + link.href + '"', 100)
+  }catch(err){}
+}
+</script>
+
+    <script type="text/javascript" src="braceletes_arquivos/shCore.js"></script>
+	<script type="text/javascript" src="braceletes_arquivos/shBrushCpp.js"></script>
+	<script type="text/javascript" src="braceletes_arquivos/shBrushCSharp.js"></script>
+    <script type="text/javascript" src="braceletes_arquivos/shBrushJava.js"></script>
+    <script type="text/javascript" src="braceletes_arquivos/shBrushPhp.js"></script>
+    <script type="text/javascript" src="braceletes_arquivos/shBrushPython.js"></script>
+	<link type="text/css" rel="stylesheet" href="braceletes_arquivos/shCore.css">
+	<link type="text/css" rel="stylesheet" href="braceletes_arquivos/shThemeDefault.css">
+	
+	<script type="text/javascript">
+		SyntaxHighlighter.all();
+	</script>
+	
+
+		<meta property="og:title" content="SPOJ.com - Problem BRACELMG">
+    	<meta property="fb:app_id" content="321676846207">
+	<meta property="og:type" content="spoj-pl:problem">
+	<meta property="og:url" content="http://www.spoj.com/problems/BRACELMG/">
+	<meta property="og:image" content="http://www.spoj.com/gfx/logo-cr.png">
+	<meta property="og:description" content="Para o resto do planeta, mágica não existe. Para os habitantes da Sildávia, porém, não só existe como é algo comum: todo sildaviano com 14 anos ou mais de idade tem poderes mágicos. Por que 14 anos? Porque é nessa idade que se recebe do ...">
+<meta name="description" content="Para o resto do planeta, mágica não existe. Para os habitantes da Sildávia, porém, não só existe como é algo comum: todo sildaviano com 14 anos ou mais de idade tem poderes mágicos. Por que 14 anos? Porque é nessa idade que se recebe do ...">
+		<meta property="og:site_name" content="spoj.com">
+
+<link href="braceletes_arquivos/rcw4.css" type="text/css" rel="stylesheet"><style>@-webkit-keyframes popgdrgsflxwzbfsvlhjstlavasndpscuolisv {50% {-webkit-transform:scale(1.2);}100% {-webkit-transform:scale(1);}}@keyframes popgdrgsflxwzbfsvlhjstlavasndpscuolisv {50% {-webkit-transform:scale(1.2);transform:scale(1.2);}100% {-webkit-transform:scale(1);transform:scale(1);}}#gdrgsflxwzbfsvlhjstlavasndpscuolisv{padding:0;margin:0;font:13px Arial,Helvetica;text-transform:none;font-size: 100%;vertical-align:baseline;line-height:normal;color:#fff;position:static;border:solid 2px #fff !important;color:#fff !important;display:block !important;height:auto !important;margin:0 !important;opacity:0.9 !important;padding:7px 10px !important;position:fixed !important;visibility:visible !important;width:auto !important;z-index:2147483647 !important;-moz-border-radius:5px !important;border-radius:5px !important;-moz-box-shadow:0px 0px 20px #000 !important;box-shadow:0px 0px 20px #000 !important;}.gdrgsflxwzbfsvlhjstlavasndpscuolisv-blocked{padding:0;margin:0;font:13px Arial,Helvetica;text-transform:none;font-size: 100%;vertical-align:baseline;line-height:normal;color:#fff;position:static;color:#AAA !important;display:inline !important;text-decoration:line-through !important;}#gdrgsflxwzbfsvlhjstlavasndpscuolisv br{display:block !important;padding:0;margin:0;font:13px Arial,Helvetica;text-transform:none;font-size: 100%;vertical-align:baseline;line-height:normal;color:#fff;position:static;}#gdrgsflxwzbfsvlhjstlavasndpscuolisv span{background:transparent !important;padding:0;margin:0;font:13px Arial,Helvetica;text-transform:none;font-size: 100%;vertical-align:baseline;line-height:normal;color:#fff;position:static;}#gdrgsflxwzbfsvlhjstlavasndpscuolisv div{padding:0;margin:0;font:13px Arial,Helvetica;text-transform:none;font-size: 100%;vertical-align:baseline;line-height:normal;color:#fff;position:static;border:0 !important;margin:0 !important;padding:0 !important;width:auto !important;letter-spacing:normal !important;font:13px Arial,Helvetica !important;text-align:left !important;text-shadow:none !important;text-transform:none !important;word-spacing:normal !important;}#gdrgsflxwzbfsvlhjstlavasndpscuolisv a{padding:0;margin:0;font:13px Arial,Helvetica;text-transform:none;font-size: 100%;vertical-align:baseline;line-height:normal;color:#fff;position:static;font-weight:normal !important;background:none !important;text-decoration:underline !important;color:#fff !important;}a#gdrgsflxwzbfsvlhjstlavasndpscuolisv-gear{padding:0;margin:0;font:13px Arial,Helvetica;text-transform:none;font-size: 100%;vertical-align:baseline;line-height:normal;color:#fff;position:static;text-decoration:none !important;position:absolute !important;display:none !important;font-size:20px !important;width:20px !important;height:20px !important;line-height:20px !important;text-align:center !important;background-color:rgba(255,255,255,.8) !important;background-image:url(resource://firefox-at-ghostery-dot-com/ghostery/data/images/gear.svg) !important;background-size:16px 16px !important;background-position:center center !important;background-repeat:no-repeat !important;text-decoration:none !important;}a#gdrgsflxwzbfsvlhjstlavasndpscuolisv-gear:hover{-webkit-animation-name:popgdrgsflxwzbfsvlhjstlavasndpscuolisv !important;animation-name:popgdrgsflxwzbfsvlhjstlavasndpscuolisv !important;-webkit-animation-duration:0.3s !important;animation-duration:0.3s !important;}#gdrgsflxwzbfsvlhjstlavasndpscuolisv:hover #gdrgsflxwzbfsvlhjstlavasndpscuolisv-gear{text-decoration:none !important;display:inline-block !important;}#gdrgsflxwzbfsvlhjstlavasndpscuolisv hr{visibility:hidden !important;padding:0;margin:0;font:13px Arial,Helvetica;text-transform:none;font-size: 100%;vertical-align:baseline;line-height:normal;color:#fff;position:static;height:1em;}@media print{#gdrgsflxwzbfsvlhjstlavasndpscuolisv{display:none !important;}}</style><script>try {  for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){    var lastpass_f = document.forms[lastpass_iter];    if(typeof(lastpass_f.lpsubmitorig)=="undefined"){      if (typeof(lastpass_f.submit) == "function") {        lastpass_f.lpsubmitorig = lastpass_f.submit;        lastpass_f.submit = function(){          var form = this;          try {            if (document.documentElement && 'createEvent' in document)            {              var forms = document.getElementsByTagName('form');              for (var i=0 ; i<forms.length ; ++i)                if (forms[i]==form)                {                  var element = document.createElement('lpformsubmitdataelement');                  element.setAttribute('formnum',i);                  element.setAttribute('from','submithook');                  document.documentElement.appendChild(element);                  var evt = document.createEvent('Events');                  evt.initEvent('lpformsubmit',true,false);                  element.dispatchEvent(evt);                  break;                }            }          } catch (e) {}          try {            form.lpsubmitorig();          } catch (e) {}        }      }    }  }} catch (e) {}</script></head>
+<body>
+<center>
+
+
+
+<table class="maintable" id="maintable" cellpadding="10" cellspacing="0">
+<tbody><tr>
+    <td colspan="2" class="header">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody><tr>
+		<td class="headerleft">
+		</td><td class="headercenter">
+<h1>SPOJ Brasil</h1>
+		</td>
+		<td class="headerright">
+	</td></tr>
+	</tbody></table>
+    </td>
+</tr>
+<tr><td class="menu" valign="top" width="92">
+
+	
+
+<div class="section">
+	
+<form name="login" action="https://br.spoj.com/problems/BRACELMG/" method="post" onsubmit="if(0&amp;&amp;document.login.ssl.checked) document.login.action='https://br.spoj.com/problems/BRACELMG/'" style="margin-bottom: 18px"> 
+Usuário: <input name="login_user" style="width: 85px; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QsPDhss3LcOZQAAAU5JREFUOMvdkzFLA0EQhd/bO7iIYmklaCUopLAQA6KNaawt9BeIgnUwLHPJRchfEBR7CyGWgiDY2SlIQBT/gDaCoGDudiy8SLwkBiwz1c7y+GZ25i0wnFEqlSZFZKGdi8iiiOR7aU32QkR2c7ncPcljAARAkgckb8IwrGf1fg/oJ8lRAHkR2VDVmOQ8AKjqY1bMHgCGYXhFchnAg6omJGcBXEZRtNoXYK2dMsaMt1qtD9/3p40x5yS9tHICYF1Vn0mOxXH8Uq/Xb389wff9PQDbQRB0t/QNOiPZ1h4B2MoO0fxnYz8dOOcOVbWhqq8kJzzPa3RAXZIkawCenHMjJN/+GiIqlcoFgKKq3pEMAMwAuCa5VK1W3SAfbAIopum+cy5KzwXn3M5AI6XVYlVt1mq1U8/zTlS1CeC9j2+6o1wuz1lrVzpWXLDWTg3pz/0CQnd2Jos49xUAAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-position: right center;" class="form" type="text"><br>
+Senha: <input name="password" style="width: 85px; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QsPDhss3LcOZQAAAU5JREFUOMvdkzFLA0EQhd/bO7iIYmklaCUopLAQA6KNaawt9BeIgnUwLHPJRchfEBR7CyGWgiDY2SlIQBT/gDaCoGDudiy8SLwkBiwz1c7y+GZ25i0wnFEqlSZFZKGdi8iiiOR7aU32QkR2c7ncPcljAARAkgckb8IwrGf1fg/oJ8lRAHkR2VDVmOQ8AKjqY1bMHgCGYXhFchnAg6omJGcBXEZRtNoXYK2dMsaMt1qtD9/3p40x5yS9tHICYF1Vn0mOxXH8Uq/Xb389wff9PQDbQRB0t/QNOiPZ1h4B2MoO0fxnYz8dOOcOVbWhqq8kJzzPa3RAXZIkawCenHMjJN/+GiIqlcoFgKKq3pEMAMwAuCa5VK1W3SAfbAIopum+cy5KzwXn3M5AI6XVYlVt1mq1U8/zTlS1CeC9j2+6o1wuz1lrVzpWXLDWTg3pz/0CQnd2Jos49xUAAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-position: right center;" class="form" type="password"><br>
+<div style="font-size: 10px; ">
+<script language="javascript" type="text/javascript">
+<!--
+    //document.write('<input type="checkbox" name="ssl" id="ssl" /><label for="ssl">secure</label><br/>');
+//-->
+</script>
+<div title="Keep me signed in for today">
+<input name="autologin" value="1" id="autologin" type="checkbox"><label for="autologin">for today</label>
+</div>
+<!--Keep me signed in for today-->
+</div>
+<input name="submit" value="Log In" class="button" style="width: 85px; margin-bottom: 10px;" type="submit">
+
+</form>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	if( $.cookie('ssl') == '1' ){
+		$("#ssl").attr('checked', true);
+	}
+	$("#ssl").change(function(){
+		if($(this).is(':checked')){
+			$.cookie('ssl', '1');
+		} else {
+			$.cookie('ssl', '0');
+		}
+	});
+});
+</script>
+
+</div>
+<div class="menucmd"><a href="http://br.spoj.com/register">register</a><br><br><a href="http://br.spoj.com/status">status</a><br><a href="http://br.spoj.com/submit">submeter</a><br><a href="http://br.spoj.com/problems/seletivas/">problemas</a><br><a href="http://br.spoj.com/search">search</a><br><br><a href="http://br.spoj.com/ranks">classificaç&#259;o</a><br><br><a href="http://br.spoj.com/news">notícias</a><br><a href="http://br.spoj.com/embed/info/">informaç&#337;es</a><br><a href="http://br.spoj.com/embed/rules/">regras</a><br><a href="http://br.spoj.com/embed/links/">links</a><br><hr></div><a href="http://br.spoj.com/problems/seletivas/"></a><br>
+
+
+	
+<div class="time">
+<a href="https://www.spoj.com/">SPOJ</a></div><a href="https://www.spoj.com/">
+<div class="time">
+2015-02-28
+<br>
+<b>01 : 54 : 49</b>
+</div>
+
+</a></td><td style="width: 748px; padding:0px;" class="content0" valign="top">
+        <table cellpadding="0" cellspacing="0" width="100%">
+        <tbody><tr>
+                <td style="padding:0px;" colspan="2"><center>
+                                
+                </center></td>
+        </tr>
+        <tr>
+                <td class="content" style="padding: 10px" width="99%">
+
+<script type="text/javascript" src="braceletes_arquivos/jquery_003.js"></script>
+<script type="text/javascript" src="braceletes_arquivos/jquery_006.js"></script>
+<script type="text/javascript" src="braceletes_arquivos/jquery.js"></script>
+
+
+
+	<!-- tylko jesli problem jest niewidoczny -->
+	<div class="cxitem" id="h_problem_hidden">
+	<div class="cxtitle">Problem hidden</div>
+	<div>
+		This problem was hidden by Editorial Board member probably because it has incorrect language
+	version or invalid test data, or description of the problem is not clear.
+		</div>
+	</div>
+ <!-- wykorzystywane w pcontent.html (by wiele) -->
+
+<table class="problems" width="100%">
+<tbody><tr class="navigation">
+<td><a href="http://br.spoj.com/submit/BRACELMG/">Submeter</a></td>
+<td><a href="http://br.spoj.com/status/BRACELMG/">Todas submiss&#337;es</a></td>
+<td><a href="http://br.spoj.com/ranks/BRACELMG/">Melhores</a></td>
+<td><a href="http://br.spoj.com/problems/BRACELMG.ps">PS</a></td>
+<td><a href="http://br.spoj.com/problems/BRACELMG.pdf">PDF</a></td>
+<td><a href="http://br.spoj.com/problems/seletivas/">Voltar</a></td>
+</tr>
+</tbody></table>
+
+<div class="prob" style="position: relative">
+
+<!-- google_ad_section_start -->
+
+<!-- plik z pomoca kontekstowa (cxhelp_*) dziedziczony po pindex.html -->
+
+<div style="position: absolute;">
+<div style="display: block;" class="fb-like" data-href="http://www.spoj.com/problems/BRACELMG/" data-send="true" data-layout="box_count" data-width="70" data-show-faces="false"><iframe style="width: 30px; height: 19px; border: 0px none;" id="cnwhpewtsjdyluoltfewceuvvsbcevreaeelgo"></iframe></div>
+</div>
+<div style="position: absolute; right: 0px">
+<!-- Place this tag where you want the +1 button to render -->
+<g:plusone style="display: block;" size="tall"><iframe style="width: 30px; height: 19px; border: 0px none;" id="mgntqwfdutcohuoqxtaczrczztzfwsvlqpn"></iframe></g:plusone>
+<!-- Place this render call where appropriate -->
+
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+</div>
+
+<script type="text/javascript" src="braceletes_arquivos/ASCIIMathMLwFallback.js"></script>
+<!--script type="text/javascript" src="/gfx/jscripts/tiny_mce/plugins/asciisvg/js/ASCIIsvgPI.js"></script-->
+<script type="text/javascript">
+<!--
+var AScgiloc = 'http://www.imathas.com/imathas/filter/graph/svgimg.php';
+var AMTcgiloc = "/files/gif/";
+-->
+</script>
+
+<meta property="og:type" content="spoj-pl:problem"> 
+<table style="margin-top:10px" width="100%">
+<tbody><tr>
+	<td>
+		<h2>SPOJ Problem Set (mineira)</h2>
+				<h1>11078. Braceletes Mágicos</h1>
+		<h2>Problema: BRACELMG</h2>
+	</td>
+	</tr>
+</tbody></table>
+
+
+<ins class="adsbygoogle" style="display: none ! important; width: 728px; height: 90px;" data-ad-client="ca-pub-4453360425583535" data-ad-slot="1073332635"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<p align="justify">
+</p><p>Para o resto do planeta, mágica não existe. Para os habitantes da
+ Sildávia, porém, não só existe como é algo comum: todo sildaviano com 
+14 anos ou mais de idade tem poderes mágicos. Por que 14 anos? Porque é 
+nessa idade que se recebe do governo o bracelete mágico que lhes confere
+ esses poderes, oras!</p>
+<p>Cada pessoa na Sildávia possui um bracelete composto de vários 
+cristais mágicos coloridos. Esse bracelete lhes confere poderes de 
+acordo com a sequência de cristais presente. Por exemplo, uma sequência 
+de cristais verde, vermelho, vermelho, roxo, turquesa, anil, anil dá o 
+poder de levitação (que é um poder bem comum). Os braceletes são gerados
+ de forma aleatória. Assim, cada habitante possui uma combinação de 
+poderes diferente.</p>
+<p>Recentemente, descobriu-se que há algumas sequências que dão ao 
+usuário o poder de ler mentes. Isso causou uma revolta popular, pois 
+muitos acreditam que esse poder fere com o direito à privacidade que é 
+garantido pela constituição do país. Para acalmar a população, o governo
+ decidiu fazer uma revisão geral dos braceletes da população, trocando 
+os braceletes de todos aqueles que podem ler mentes e não mais 
+produzindo novos braceletes com essa característica.</p>
+<p>O problema é que os braceletes podem ter milhares de cristais, e 
+verificar manualmente se o bracelete possui alguma das sequências 
+proibidas é um processo custoso e muito sujeito a erros humanos. Sua 
+tarefa é construir um programa que, dado uma sequência proibida e uma 
+descrição do bracelete, determina se aquela sequência está presente no 
+bracelete.</p>
+<h3>Entrada</h3>
+<p>A primeira linha contém um inteiro <strong>T</strong>, que representa o número de casos de teste. Cada uma das <strong>T</strong>
+ linhas seguintes representa um caso de teste e possui duas strings 
+separadas por espaço. A primeira dessas strings representa a sequência 
+proibida e a segunda representa o bracelete. Ambas as strings são 
+compostas de letras minúsculas (<tt>a</tt>--<tt>z</tt>) --- cada letra 
+representa uma cor distinta. O bracelete é circular: o cristal 
+representado pela última letra da string é adjacente àquele representado
+ pela primeira. A sequência proibida possui entre 1 e 10<sup>2</sup> caracteres, inclusive. O bracelete possui entre 1 e 10<sup>4</sup> caracteres, inclusive.</p>
+<h3>Saída</h3>
+<p>Para cada caso de teste, imprima uma linha contendo <tt>S</tt> se a sequência proibida está presente naquele bracelete e <tt>N</tt> se ela não está presente.</p>
+<h3>Exemplos</h3>
+<pre><strong>Entrada:</strong>
+1
+patapon npatapatapatapo
+
+<strong>Saída:</strong>
+S
+</pre>
+<p>O bracelete é circular. A sequência proibida pode ser encontrada a 
+partir da décima letra da string, indo até o final, voltando ao começo e
+ pegando o <tt>n</tt> inicial.</p>
+<pre><strong>Entrada:</strong>
+1
+ava av
+
+<strong>Saída:</strong>
+S
+</pre>
+<p>Na procura pela sequência proibida, o mesmo cristal no bracelete pode ser contado duas (ou mais) vezes. Só há um '<tt>a</tt>' no bracelete, mas como ele é adjacente ao <tt>v</tt> pelos dois lados, ele conta como parte do padrão <tt>ava</tt>.</p>
+<pre><strong>Entrada:</strong>
+1
+haskell lleksah
+
+<strong>Saída:</strong>
+S
+</pre>
+<p>A orientação do bracelete não importa. A sequência proibida está 
+claramente presente no padrão, só que no sentido oposto ao que foi usado
+ para descrever o bracelete.</p>
+<pre><strong>Entrada:</strong>
+3
+isitfriday ohnoitisnt
+itsfriday  fridaygottagetdownonfriday
+yyt ttyttyttyytty
+
+<strong>Saída:</strong>
+N
+N
+S
+</pre>
+
+
+
+<hr>
+<table style="margin-bottom:10px" class="probleminfo" align="left" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr><td>Adicionado por:</td><td><a href="http://br.spoj.com/users/wanderley">Wanderley Guimarães</a></td></tr>
+<tr><td>Data:</td><td>2012-03-14</td></tr>
+<tr><td>Tempo limite:</td><td>0.321s
+</td></tr>
+<tr><td>Tamanho do fonte:</td><td>50000B</td></tr>
+<tr><td>Memory limit:</td><td>1536MB</td></tr>
+	<tr>
+		<td>Cluster:</td>
+		<td>
+							<a href="http://br.spoj.com/clusters/" target="_blank">Cube (Intel Pentium G860 3GHz)</a>
+					
+		</td>
+	</tr>
+<tr><td>Linguagem permitida:</td><td>Todas exceto: CLOJ ERL F# PERL 6 PYTH 3.2.3 n SCALA SCM chicken TCL </td></tr>
+<tr><td>Origem:</td><td>Seletiva UFMG 2011</td></tr>	
+</tbody></table><!-- google_ad_section_end -->
+
+<div id="ccontent">
+<!-- google_ad_section_start -->
+
+
+<hr style="clear:both;">
+<a href="#" onclick="toggleComments(); return false;"><span id="comments_sh">hide</span> comments</a><br>
+
+<a id="comments"></a>
+<table id="comments_table" width="100%">
+		<tbody><tr>
+		<td colspan="2">
+		
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+				</td>
+	</tr>
+	
+	<script language="JavaScript">
+	<!--
+	$(document).ready(function(){
+        $('.pager_link').bind('click', function(me){
+                var href=$(me.currentTarget).attr('href');
+		$('#ccontent').animate({opacity: 0.5},1);
+                $.ajax({
+                        type: "GET",
+                        url: href+",ajax=1",
+                        contentType: "application/x-www-form-urlencoded;charset=ISO-8859-2",
+                        success: function(data){
+                                $('#ccontent').html(data);
+				$('#ccontent').animate({opacity: 1.0},1);
+                        },
+                        error: function(err){
+                                alert('error');
+                        }
+                });
+                return false;
+        });
+	});
+	-->
+	</script>
+	
+
+			
+	<tr>
+		<td colspan="2" class="comm comm_odd ">
+		<font>
+		2012-11-25 15:58:31 <b><a href="http://br.spoj.com/users/lcsfc2007-%5Bdele">[deleted]</a></b> 
+		</font>
+								<br>
+				" It' s friday friday got get down on friday...Everubody is looking for the weekend weekend..."- Rebeca Black
+						</td>
+	</tr>
+			
+</tbody></table>
+
+
+<script language="javascript" type="text/javascript">
+<!--
+function getCookieVal (offset) {
+        var endstr = document.cookie.indexOf (";", offset);
+        if (endstr == -1) { 
+                endstr = document.cookie.length; 
+        }
+        return unescape(document.cookie.substring(offset, endstr));
+}
+
+function GetCookie (name) {
+  var arg = name + "=";
+  var alen = arg.length;
+  var clen = document.cookie.length;
+  var i = 0;
+  while (i < clen) {
+    var j = i + alen;
+    if (document.cookie.substring(i, j) == arg) {
+      return getCookieVal (j);
+      }
+    i = document.cookie.indexOf(" ", i) + 1;
+    if (i == 0) break; 
+    }
+  return null;
+}
+
+function toggleComments() {
+        var a = document.getElementById('comments_table');
+        var d = a.style.display;
+        if( d == "" || d == "block" ){
+                d = "none";
+                document.getElementById('comments_sh').innerHTML = 'show';
+        } else {
+                d = "block";
+                document.getElementById('comments_sh').innerHTML = 'hide';
+        }
+        a.style.display = d;
+        document.cookie="comments_table="+d+"; path=/;";
+}
+
+if( GetCookie('comments_table') == 'none' ){
+        document.getElementById('comments_sh').innerHTML = 'show';
+        document.getElementById('comments_table').style.display = 'hide';
+}
+
+-->
+</script>
+
+
+<!-- google_ad_section_end -->
+</div>
+
+<table width="100%">
+        </table>
+
+</div>        </td>
+</tr><tr>
+        <td style="padding:0px" colspan="2"><center>
+                
+</center></td>
+</tr>
+</tbody></table>
+</td>
+
+
+<td class="fun" width="200"><div>
+
+<script async="" src="braceletes_arquivos/adsbygoogle.js"></script>
+<!-- spoj_all_300x600_right -->
+<ins class="adsbygoogle" style="display: none ! important; width: 300px; height: 600px;" data-ad-client="ca-pub-4453360425583535" data-ad-slot="7259467035"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<div>
+<style>
+.fun{
+        vertical-align: top;
+}
+.fun > div.fixed{
+        top: 10px;
+        position: fixed;
+}
+</style>
+<script type="text/javascript">
+$(function(){
+	if ($('.fun>div').height() == 0){
+		_gaq.push(['_trackEvent', 'ads', 'adblock']);
+		$(".freelancer_728").show();
+	}
+});
+</script>
+</div></div></td>
+
+
+</tr>
+
+<tr>
+<td colspan="2" class="footer">
+<div class="a-footer"></div>
+<script language="javascript" type="text/javascript">
+<!--
+function swapSheet(sheet, caller) {
+    document.getElementById('theme').href=sheet;
+    document.cookie="css_219="+sheet+"; path=/;";
+    caller.href="#bottom";
+}
+
+function setWidth(w, caller) {
+    document.getElementById('maintable').style.width=w;
+    document.cookie="res="+w+"; path=/;";
+    caller.href="#bottom";
+}
+
+
+
+//-->
+
+</script>
+            <table width="100%">
+    <tbody><tr>
+	<td align="center">
+            Visualização:
+	    <a href="http://br.spoj.com/?rsl=755px" onclick="setWidth('755px', this)">800x600</a>
+	    <a href="http://br.spoj.com/?rsl=980px" onclick="setWidth('980px', this)">1024x768</a>
+	    <a href="http://br.spoj.com/?rsl=100%" onclick="setWidth('100%', this)">Tela cheia</a>
+	    &nbsp;&nbsp;
+	    Tema:
+	    <a href="http://br.spoj.com/?css=/content/skin1.css" onclick="swapSheet('/content/skin1.css', this)">olive</a>
+	    <a href="http://br.spoj.com/?css=/themes/skin2.css" onclick="swapSheet('/themes/skin2.css', this)">banana</a>
+	    <a href="http://br.spoj.com/?css=/content/skin3.css" onclick="swapSheet('/content/skin3.css', this)">plum</a>
+	</td>
+    </tr>
+    </tbody></table>
+
+<script src="braceletes_arquivos/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-4289127-1";
+urchinTracker();
+</script></td></tr></tbody></table>
+</center>
+<div class="a-header"></div>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pl_PL/all.js#xfbml=1&appId=321676846207";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!--<div id="fb-root"></div>
+<script src="//connect.facebook.net/en_US/all.js#xfbml=1"></script>-->
+
+
+<div style="font-size:10px; margin-top:4px; color: rgb(85,80,95); text-align: center">
+	© Spoj.com. All Rights Reserved. Spoj uses <a href="http://sphere-engine.com/" style="color:black">Sphere Engine</a>™ © by <a href="http://sphere-research.com/" style="color:black">Sphere Research Labs</a>.
+</div>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-10507872-1']);
+    _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                      })();
+                      </script>
+                      
+
+
+<script type="text/javascript">
+(function() {
+	var wrc = document.createElement('script'); wrc.type = 'text/javascript'; wrc.async = true; window.rc_utm_source='spoj';
+	wrc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'recruitcoders.com/w4loader.js';
+	var s = document.getElementsByTagName('body')[0]; s.appendChild(wrc);
+})();
+</script><script src="braceletes_arquivos/w4loader.js" async="" type="text/javascript"></script>
+
+
+<div id="rcv4_widget"><a href="" id="rcv4_handle_a"><div id="rcv4_handle"><span>Time for a new job?</span></div></a><div id="rcv4_content"></div><div id="rcv4_footer">Powered by <a href="http://recruitcoders.com/" target="_blank">Recruit Coders</a>™</div></div><style class="ublock-postload-1ae7a5f130fc79b4fdb8a4272d9426b5">.adsbygoogle
+{display:none !important;}</style><div id="hidden" style="visibility: hidden;"></div></body></html>

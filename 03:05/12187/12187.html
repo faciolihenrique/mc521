@@ -1,0 +1,126 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"></head><body><p>
+In the land of ACM ruled a great King who became obsessed with order. The kingdom had 
+a rectangular form, and the King divided the territory into a grid of small rectangular 
+<span class="textit">counties</span>. Before dying, the King distributed the counties among his sons. 
+
+</p><p>
+However, he was unaware that his children had developed a strange rivalry: the first 
+heir hated the second heir, but not the rest; the second heir hated the third heir, but 
+not the rest, and so on ...Finally, the last heir hated the first heir, but not 
+the other heirs. 
+
+</p><p>
+As soon as the King died, the strange rivalry among the King's sons sparked off a 
+generalized war in the kingdom. Attacks only took place between pairs of adjacent 
+counties (adjacent counties are those that share one vertical or horizontal border). 
+A county <span class="MATH"><i>X</i></span> attacked an adjacent county <span class="MATH"><i>Y</i></span> whenever the owner of <span class="MATH"><i>X</i></span> hated the owner of 
+<span class="MATH"><i>Y</i></span>. The attacked county was always conquered by the attacking brother. By a rule of 
+honor all the attacks were carried out simultaneously, and a set of simultaneous 
+attacks was called a <span class="textit">battle</span>. After a certain number of battles, the surviving sons 
+made a truce and never battled again. 
+
+</p><p>
+For example, if the King had three sons, named 
+0, 1 and 2, the figure below shows what happens in the first battle for a given initial 
+land distribution:
+
+</p><p>
+</p><div align="CENTER">
+<!-- MATH
+ $\epsfbox{p4473.eps}$
+ -->
+<img src="12187_arquivos/p4473.png" alt="\epsfbox{p4473.eps}" height="259" align="BOTTOM" border="0" width="790">
+</div>
+
+<p>
+You were hired to help an ACM historian determining, given the number of heirs, the 
+initial land distribution and the number of battles, what was the land distribution 
+after all battles.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2>
+
+<p>
+The input contains several test cases. The first line of a test case contains four 
+integers <span class="MATH"><i>N</i></span>, <span class="MATH"><i>R</i></span>, <span class="MATH"><i>C</i></span> and <span class="MATH"><i>K</i></span>, separated by single spaces. <span class="MATH"><i>N</i></span> is the number of heirs 
+<!-- MATH
+ $(2 \le N \le 100)$
+ -->
+<span class="MATH">(2<img src="12187_arquivos/4473img2.png" alt="$ \le$" height="31" align="MIDDLE" border="0" width="18"><i>N</i><img src="12187_arquivos/4473img2.png" alt="$ \le$" height="31" align="MIDDLE" border="0" width="18">100)</span>, <span class="MATH"><i>R</i></span> and <span class="MATH"><i>C</i></span> are the dimensions of the kingdom <!-- MATH
+ $(2 \le R, C \le 100)$
+ -->
+<span class="MATH">(2<img src="12187_arquivos/4473img2.png" alt="$ \le$" height="31" align="MIDDLE" border="0" width="18"><i>R</i>, <i>C</i><img src="12187_arquivos/4473img2.png" alt="$ \le$" height="31" align="MIDDLE" border="0" width="18">100)</span>, 
+and <span class="MATH"><i>K</i></span> is the number of battles <!-- MATH
+ $(1 \le K \le 100)$
+ -->
+<span class="MATH">(1<img src="12187_arquivos/4473img2.png" alt="$ \le$" height="31" align="MIDDLE" border="0" width="18"><i>K</i><img src="12187_arquivos/4473img2.png" alt="$ \le$" height="31" align="MIDDLE" border="0" width="18">100)</span>. Heirs are identified by sequential 
+integers starting from zero (0 is the first heir, 1 is the second heir, <span class="MATH">...</span>, 
+<span class="MATH"><i>N</i> - 1</span> is the last heir). Each of the next <span class="MATH"><i>R</i></span> lines contains <span class="MATH"><i>C</i></span> integers <span class="MATH"><i>H</i><sub>r, c</sub></span> separated 
+by single spaces, representing initial land distribution: <span class="MATH"><i>H</i><sub>r, c</sub></span> is the initial owner 
+of the county in row <span class="MATH"><i>r</i></span> and column <span class="MATH"><i>c</i></span> <!-- MATH
+ $(0 \le H_{r,c} \le N - 1)$
+ -->
+<span class="MATH">(0<img src="12187_arquivos/4473img2.png" alt="$ \le$" height="31" align="MIDDLE" border="0" width="18"><i>H</i><sub>r, c</sub><img src="12187_arquivos/4473img2.png" alt="$ \le$" height="31" align="MIDDLE" border="0" width="18"><i>N</i> - 1)</span>. 
+
+</p><p>
+The last test case is followed by a line containing four zeroes separated by single spaces.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2>
+
+<p>
+For each test case, your program must print <span class="MATH"><i>R</i></span> lines with <span class="MATH"><i>C</i></span> integers each, separated by 
+single spaces in the same format as the input, representing the land distribution after 
+all battles. 
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2> 
+
+<p>
+</p><pre>3 4 4 3
+0 1 2 0
+1 0 2 0
+0 1 2 0
+0 1 2 2
+4 2 3 4
+1 0 3 
+2 1 2 
+8 4 2 1
+0 7 
+1 6 
+2 5 
+3 4 
+0 0 0 0
+</pre>
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2> 
+
+<p>
+</p><pre>2 2 2 0
+2 1 0 1
+2 2 2 0
+0 2 0 0
+1 0 3 
+2 1 2 
+7 6 
+0 5 
+1 4 
+2 3
+</pre>
+
+<p>
+</p></body></html>
