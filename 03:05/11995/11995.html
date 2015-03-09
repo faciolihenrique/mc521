@@ -1,0 +1,99 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Problem I: I Can Guess the Data Structure!</title>
+</head>
+<body>
+
+<center>
+<h1>Problem I</h1>
+<h2>I Can Guess the Data Structure!</h2>
+</center>
+
+<p>There is a bag-like data structure, supporting two operations:</p>
+
+<pre>1 x</pre>
+<p>Throw an element x into the bag.</p>
+
+<pre>2</pre>
+<p>Take out an element from the bag.</p>
+
+<p>Given a sequence of operations with return values, you're going to 
+guess the data structure. It is a stack (Last-In, First-Out), a queue 
+(First-In, First-Out), a priority-queue (Always take out larger elements
+ first) or something else that you can hardly imagine!</p>
+
+<h2>Input</h2>
+<p>There are several test cases. Each test case begins with a line 
+containing a single integer n (1&lt;=n&lt;=1000). Each of the next n 
+lines is either a type-1 command, or an integer 2 followed by an integer
+ x. That means after executing a type-2 command, we get an element x <em>without error</em>.
+ The value of x is always a positive integer not larger than 100. The 
+input is terminated by end-of-file (EOF). The size of input file does 
+not exceed 1MB.</p>
+
+<h2>Output</h2>
+<p>For each test case, output one of the following:</p>
+
+<pre>stack</pre>
+<p>It's definitely a stack.</p>
+
+<pre>queue</pre>
+<p>It's definitely a queue.</p>
+
+<pre>priority queue</pre>
+<p>It's definitely a priority queue.</p>
+
+<pre>impossible</pre>
+<p>It can't be a stack, a queue or a priority queue.</p>
+
+<pre>not sure</pre>
+<p>It can be more than one of the three data structures mentioned above.</p>
+
+<h2>Sample Input</h2>
+<pre>6
+1 1
+1 2
+1 3
+2 1
+2 2
+2 3
+6
+1 1
+1 2
+1 3
+2 3
+2 2
+2 1
+2
+1 1
+2 2
+4
+1 2
+1 1
+2 1
+2 2
+7
+1 2
+1 5
+1 1
+1 3
+2 5
+1 4
+2 4
+</pre>
+
+<h2>Output for the Sample Input</h2>
+<pre>queue
+not sure
+impossible
+stack
+priority queue
+</pre>
+
+<hr>
+<i>Rujia Liu's Present 3: A Data Structure Contest Celebrating the 100th Anniversary of Tsinghua University</i><br>
+<i>Special Thanks: Yiming Li</i><br>
+<i>Note: Please make sure to test your program with the gift I/O files before submitting!</i><br>
+
+
+</body></html>
